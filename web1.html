@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #main {
+        height: 600px;
+        width: 800px;
+        float: left;
+    }
+
+    #left {
+        height: 200px;
+        width: 200px;
+        float: left;
+    }
+
+    #right {
+
+        height: 600px;
+        width: 600px;
+        margin-bottom: 250px;
+        float: right;
+    }
+
+    #intro {
+        border-left: 1px solid rgb(179, 169, 169);
+        height: 100px;
+    }
+
+    #h {
+
+        color: red;
+        background-color: rgb(227, 195, 195);
+
+    }
+
+    #d1 {
+        height: 10px;
+        width: 600px;
+        float: right;
+    }
+
+    table {
+        height: 100px;
+        width: 600px;
+        float: right;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border: 0.5px solid rgb(188, 180, 180);
+        border-collapse: collapse;
+
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #img {
+        height: 150px;
+        width: 600px;
+        border: 5px soild rgb(3, 3, 3);
+        margin: 5px;
+    }
+
+    #img1 {
+        height: 150px;
+        width: 200px;
+        border:10px soild rgb(3, 3, 3);
+        float: left;
+    }
+
+    #img2 {
+        height: 150px;
+        width: 200px;
+        border:5px soild rgb(0, 0, 0);
+        float:left;
+    }
+
+    #img3 {
+        height: 150px;
+        width: 200px;
+        border:5px soild rgb(3, 3, 3);
+        float:right;
+    }
+
+    span {
+        height: 10px;
+        width: 10px;
+        font-weight: bold;
+        font-size: large;
+        border: 5px soild rgb(3, 3, 3);
+
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div id="left">
+            <h3> Some Favorites</h3>
+            <form action>
+                <select id="veg" name="vegetable" multiple style="border: none; color: blue;">
+                    <option value="volvo">Celery Root</option>
+                    <option value="volvo">Spaghetti Squash</option>
+                    <option value="audi">Killer Mushrooms</option>
+                </select>
+                <br>
+                <input type="text" id="search" name="search">
+                <br>
+                <button type="search" style="background-color:rgb(92, 98, 188);color:white ;"> Search</button>
+            </form>
+        </div>
+        <div id="right">
+            <div id="d">
+                <p id="h">Uh oh! Have you had your daily dose of veggies today??</p>
+                <h1> Wild & Wacky Vegetables</h1>
+                <p id="intro"> The beet is the most intense of vegetables.The radish,admittedly,
+is more feverish,but the fire of the radish
+                    is a cold fire, the fire of discontent not of passion.Tomatoes are
+                    lusty enough,yet there runs through
+                    tomatoes an undercurrent of frivolity.Beets are deadly serious.
+                </p>
+                <author> Tom Robbins</author>
+            </div>
+            <h2> Some diseases</h2>
+            <div id="table">
+                <table>
+                    <tr style="text-align:left">
+                        <th> Veggle</th>
+                        <th>Disease</th>
+                        </th>
+                    <tr>
+                        <td> Beets</td>
+                        <td> Beeturia</td>
+                    </tr>
+                    <tr>
+                        <td>Carrots</td>
+                        <td>Carotenosis</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="img">
+                <div id="img1">
+                    <img src="beetroot.jpeg" alt="beetroot" width="100%">
+                    <span>Beets</span>
+                    <p>careful not to get your hands dirty</p>
+                </div>
+                <div id="img2">
+                    <img src="carrot.jpeg" alt="carrot" style=" height: 130px; width: 180px;">
+                    <span>Carrot</span>
+                    <p>Not sticks,can motivate</p>
+                </div>
+                <div id="img3">
+                    <img src="murshroom.jpeg" alt="murshroom" style=" height: 130px; width: 180px;">
+                    <span>Murshroom</span>
+                    <p> Spears,spears,spears</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
